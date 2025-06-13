@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AstroSphere | Zodiac Signs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar nav-1">
+      <section class="flex">
+        <a href="home.html" class="logo"><img src="logo.png" alt="AstroSphere"></a>
+        <ul>
+          <li><a href="daily.html">Daily Horoscope <i class="fas fa-star"></i></a></li>
+        </ul>
+      </section>
+    </nav>
+    <nav class="navbar nav-2">
+      <section class="flex">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Horoscopes <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="love.html">Love</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="health.html">Health</a></li>
+              </ul>
+            </li>
+            <li><a href="zodiac.html">Zodiac Signs</a></li>
+            <li><a href="#">Help <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <ul>
+          <li><a href="#">account <i class="fas fa-angle-down"></i></a>
+            <ul>
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="login.html" onclick="signOut()">Sign Out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </nav>
+  </header>
+  <section class="zodiac">
+   <h1 class="headinng"><b>ZODIAC SYMBOLS</b></h1>
+   <div class="box-container">
+      <div class="box" style="background-color: #a3ccff;">
+         <img src="aries.png" alt="">
+         <h3>Aries</h3>
+         <p><b>Date:</b> Mar 21 - Apr 19</p>
+         <p><b>Elements:</b> Fire</p>
+         <p><b>Traits:</b> Energetic, bold, and determined. Natural leaders who love challenges.</p>
+         <div class="btn-group">
+            <a href="love.html" class="inline-btn" style="border-radius: 5px;">Love</a>
+            <a href="health.html" class="inline-btn" style="border-radius: 5px;">Health</a>
+         </div>
+      </div>
+      <div class="box" style="background-color: #a3ccff;">
+         <img src="taurus.png" alt="">
+         <h3>Taurus</h3>
+         <p><b>Date:</b> Apr 20 - May 20</p>
+         <p><b>Elements:</b> Earth</p>
+         <p><b>Traits:</b> Loyal, grounded, and reliable. Lovers of comfort, beauty, and stability.</p>
+         <div class="btn-group">
+            <a href="love.html" class="inline-btn" style="border-radius: 5px;">Love</a>
+            <a href="health.html" class="inline-btn" style="border-radius: 5px;">Health</a>
+         </div>
+      </div>
+      <div class="box" style="background-color: #a3ccff;">
+         <img src="gemini.png" alt="">
+         <h3>Gemini</h3>
+         <p><b>Date:</b> May 21 - Jun 20</p>
+         <p><b>Elements:</b> Air</p>
+         <p><b>Traits:</b> Witty, curious, and adaptable. Masters of communication and variety.</p>
+         <div class="btn-group">
+            <a href="love.html" class="inline-btn" style="border-radius: 5px;">Love</a>
+            <a href="health.html" class="inline-btn" style="border-radius: 5px;">Health</a>
+         </div>
+      </div>
+      <div class="box" style="background-color: #a3ccff;">
+        <img src="cancer-sign.png" alt="Cancer">
+        <h3>Cancer</h3>
+        <p><b>Date:</b> Jun 21 - Jul 22</p>
+        <p><b>Elements:</b> Water</p>
+        <p><b>Traits:</b> Emotional, nurturing, and protective. Deeply intuitive and loyal.</p>
+        <div class="btn-group">
+            <a href="love.html" class="inline-btn" style="border-radius: 5px;">Love</a>
+            <a href="health.html" class="inline-btn" style="border-radius: 5px;">Health</a>
+        </div>
+      </div>
+      <div class="box" style="background-color: #a3ccff;">
+        <img src="leo.png" alt="Leo">
+        <h3>Leo</h3>
+        <p><b>Date:</b> Jul 23 - Aug 22</p>
+        <p><b>Elements:</b> Fire</p>
+        <p><b>Traits:</b> Confident, charismatic, and creative. Born leaders with generous hearts.</p>
+        <div class="btn-group">
+            <a href="love.html" class="inline-btn" style="border-radius: 5px;">Love</a>
+            <a href="health.html" class="inline-btn" style="border-radius: 5px;">Health</a>
+        </div>
+      </div>
+      <div class="box" style="background-color: #a3ccff;">
+        <img src="virgo.png" alt="Virgo">
+        <h3>Virgo</h3>
+        <p><b>Date:</b> Aug 23 - Sep 22</p>
+        <p><b>Elements:</b> Earth</p>
+        <p><b>Traits:</b> Practical, intelligent, and perfectionist. Natural healers and problem-solvers.</p>
+        <div class="btn-group">
+            <a href="love.html" class="inline-btn" style="border-radius: 5px;">Love</a>
+            <a href="health.html" class="inline-btn" style="border-radius: 5px;">Health</a>
+        </div>
+      </div>
+      <div class="box" style="background-color: #a3ccff;">
+        <img src="libra.png" alt="Libra">
+        <h3>Libra</h3>
+        <p><b>Date:</b> Sep 23 - Oct 22</p>
+        <p><b>Elements:</b> Air</p>
+        <p><b>Traits:</b> Balanced, diplomatic, and charming. Seekers of peace and harmony.</p>
+        <div class="btn-group">
+            <a href="love.html" class="inline-btn" style="border-radius: 5px;">Love</a>
+            <a href="health.html" class="inline-btn" style="border-radius: 5px;">Health</a>
+        </div>
+      </div>
+      <div class="box" style="background-color: #a3ccff;">
+        <img src="scorpio.png" alt="Scorpio">
+        <h3>Scorpio</h3>
+        <p><b>Date:</b> Oct 23 - Nov 21</p>
+        <p><b>Elements:</b> Water</p>
+        <p><b>Traits:</b> Intense, passionate, and resourceful. Mysterious and emotionally deep.</p>
+        <div class="btn-group">
+            <a href="love.html" class="inline-btn" style="border-radius: 5px;">Love</a>
+            <a href="health.html" class="inline-btn" style="border-radius: 5px;">Health</a>
+        </div>
+      </div>
+      <div class="box" style="background-color: #a3ccff;">
+        <img src="sagittarius.png" alt="Sagittarius">
+        <h3>Sagittarius</h3>
+        <p><b>Date:</b> Nov 22 - Dec 21</p>
+        <p><b>Elements:</b> Fire</p>
+        <p><b>Traits:</b> Adventurous, optimistic, and independent. Lovers of freedom and travel.</p>
+        <div class="btn-group">
+            <a href="love.html" class="inline-btn" style="border-radius: 5px;">Love</a>
+            <a href="health.html" class="inline-btn" style="border-radius: 5px;">Health</a>
+        </div>
+      </div>
+      <div class="box" style="background-color: #a3ccff;">
+        <img src="capricorn.png" alt="Capricorn">
+        <h3>Capricorn</h3>
+        <p><b>Date:</b> Dec 22 - Jan 19</p>
+        <p><b>Elements:</b> Earth</p>
+        <p><b>Traits:</b> Ambitious, disciplined, and wise. Strong leaders with traditional values.</p>
+        <div class="btn-group">
+            <a href="love.html" class="inline-btn" style="border-radius: 5px;">Love</a>
+            <a href="health.html" class="inline-btn" style="border-radius: 5px;">Health</a>
+        </div>
+      </div>
+      <div class="box" style="background-color: #a3ccff;">
+        <img src="star.png" alt="Aquarius">
+        <h3>Aquarius</h3>
+        <p><b>Date:</b> Jan 20 - Feb 18</p>
+        <p><b>Elements:</b> Air</p>
+        <p><b>Traits:</b> Visionary, independent, and progressive. Innovative thinkers with big hearts.</p>
+        <div class="btn-group">
+            <a href="love.html" class="inline-btn" style="border-radius: 5px;">Love</a>
+            <a href="health.html" class="inline-btn" style="border-radius: 5px;">Health</a>
+        </div>
+      </div>
+      <div class="box" style="background-color: #a3ccff;">
+        <img src="pisces.png" alt="Pisces">
+        <h3>Pisces</h3>
+        <p><b>Date:</b> Feb 19 - Mar 20</p>
+        <p><b>Elements:</b> Water</p>
+        <p><b>Traits:</b> Empathetic, artistic, and spiritual. Dreamers deeply connected to emotions.</p>
+        <div class="btn-group">
+            <a href="love.html" class="inline-btn" style="border-radius: 5px;">Love</a>
+            <a href="health.html" class="inline-btn" style="border-radius: 5px;">Health</a>
+        </div>
+      </div>
+   </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col" id="company">
+          <a href="home.html" class="logo"><img src="logo.png" alt="AstroSphere"></a>
+          <p>We specialize in designs and creative services to help your birth status stand out.</p>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col" id="services">
+          <h3><b>Services</b></h3>
+          <div class="links">
+            <a href="#">Illustration</a>
+            <a href="#">Creatives</a>
+            <a href="#">Poster Design</a>
+            <a href="#">House Design</a>
+          </div>
+        </div>
+        <div class="col" id="useful-links">
+          <h3>Links</h3>
+          <div class="links">
+            <a href="about2.html">About</a>
+            <a href="service2.html">Services</a>
+            <a href="#">Our Policy</a>
+            <a href="#">Help</a>
+          </div>
+        </div>
+        <div class="col" id="contact">
+          <h3>Contact</h3>
+          <div class="contact-details">
+            <i class="fa fa-location-dot"></i>
+            <p>Falguni Appartment, Barrackpore, Kolkata, India</p>
+          </div>
+          <br>
+          <div class="contact-details">
+            <i class="fa fa-phone"></i>
+            <p>+91-8100402401</p>
+          </div>
+          <br>
+          <div class="contact-details">
+            <i class="fa-solid fa-truck-fast"></i>
+            <p>nandakishorejana780@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

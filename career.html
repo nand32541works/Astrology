@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Astrology Website | Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar nav-1">
+      <section class="flex">
+        <a href="home.html" class="logo"><img src="logo.png" alt="AstroSphere"></a>
+        <ul>
+          <li><a href="daily.html">Daily Horoscope <i class="fas fa-star"></i></a></li>
+        </ul>
+      </section>
+    </nav>
+    <nav class="navbar nav-2">
+      <section class="flex">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Horoscopes <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="love.html">Love</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="health.html">Health</a></li>
+              </ul>
+            </li>
+            <li><a href="zodiac.html">Zodiac Signs</a></li>
+            <li><a href="#">Help <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <ul>
+          <li><a href="#">account <i class="fas fa-angle-down"></i></a>
+            <ul>
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="login.html" onclick="signOut()">Sign Out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </nav>
+  </header>
+  <section class="career-opportunities">
+    <div class="container">
+        <h1>Career & Job Opportunities in Astrology</h1>
+        <p>Explore unique career paths in the mystical world of astrology and related sciences.</p>
+        <div class="job-cards">
+            <div class="job-card">
+                <img src="astrology.png" alt="Astrologer Consultant">
+                <h3>Astrologer Consultant</h3>
+                <p style="text-align: left;">
+                    Guide clients on life decisions, future predictions, and 
+                    personal advice based on birth charts and planetary positions.
+                </p>
+                <div class="btn-group">
+                    <a href="apply.html" class="inline-btn" style="border-radius: 5px;">Apply</a>
+                    <a href="#" class="inline-btn" style="border-radius: 5px;">Details</a>
+                </div>
+            </div>
+            <div class="job-card">
+                <img src="numerology.png" alt="Astrologer Consultant">
+                <h3>Numerology Expert</h3>
+                <p style="text-align: left;">
+                    Help clients understand the meaning behind numbers associated with their name, 
+                    birth date, and life path.
+                </p>
+                <div class="btn-group">
+                    <a href="apply.html" class="inline-btn" style="border-radius: 5px;">Apply</a>
+                    <a href="#" class="inline-btn" style="border-radius: 5px;">Details</a>
+                </div>
+            </div>
+            <div class="job-card">
+                <img src="tarot.png" alt="Astrologer Consultant">
+                <h3>Tarot Card Reader</h3>
+                <p style="text-align: left;">
+                    Use tarot cards to provide clients with insights about their love life, career, 
+                    health, and spiritual guidance.
+                </p>
+                <div class="btn-group">
+                    <a href="apply.html" class="inline-btn" style="border-radius: 5px;">Apply</a>
+                    <a href="#" class="inline-btn" style="border-radius: 5px;">Details</a>
+                </div>
+            </div>
+            <div class="job-card">
+                <img src="copy-writing.png" alt="Astrologer Consultant">
+                <h3>Content Writer (Astrology)</h3>
+                <p style="text-align: left;">
+                    Write daily, weekly, and monthly horoscopes, articles on astrological topics, and 
+                    social media content.
+                </p>
+                <div class="btn-group">
+                    <a href="apply.html" class="inline-btn" style="border-radius: 5px;">Apply</a>
+                    <a href="#" class="inline-btn" style="border-radius: 5px;">Details</a>
+                </div>
+            </div>
+            <div class="job-card">
+                <img src="matchmaker.png" alt="Astrologer Consultant">
+                <h3>Matchmaking Analyst</h3>
+                <p style="text-align: left;">
+                    Analyze birth charts and compatibility for marriage and relationships using 
+                    astrological methods.
+                </p>
+                <div class="btn-group">
+                    <a href="apply.html" class="inline-btn" style="border-radius: 5px;">Apply</a>
+                    <a href="#" class="inline-btn" style="border-radius: 5px;">Details</a>
+                </div>
+            </div>
+            <div class="job-card">
+                <img src="pray.png" alt="Astrologer Consultant">
+                <h3>Spiritual Healer</h3>
+                <p style="text-align: left;">
+                    Offer energy healing sessions, meditation guidance, and wellness counseling based 
+                    on spiritual practices.
+                </p>
+                <div class="btn-group">
+                    <a href="apply.html" class="inline-btn" style="border-radius: 5px;">Apply</a>
+                    <a href="#" class="inline-btn" style="border-radius: 5px;">Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col" id="company">
+          <a href="home.html" class="logo"><img src="logo.png" alt=""></a>
+          <p>We specialize in designs and creative services to help your birth status stand out.</p>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col" id="services">
+          <h3><b>Services</b></h3>
+          <div class="links">
+            <a href="#">Illustration</a>
+            <a href="#">Creatives</a>
+            <a href="#">Poster Design</a>
+            <a href="#">House Design</a>
+          </div>
+        </div>
+        <div class="col" id="useful-links">
+          <h3>Links</h3>
+          <div class="links">
+            <a href="about2.html">About</a>
+            <a href="service2.html">Services</a>
+            <a href="#">Our Policy</a>
+            <a href="#">Help</a>
+          </div>
+        </div>
+        <div class="col" id="contact">
+          <h3>Contact</h3>
+          <div class="contact-details">
+            <i class="fa fa-location-dot"></i>
+            <p>Falguni Appartment, Barrackpore,<br>Barasat Road, Kolkata, India</p>
+          </div>
+          <br>
+          <br>
+          <div class="contact-details">
+            <i class="fa fa-phone"></i>
+            <p>+91-8100402401</p>
+          </div>
+          <br>
+          <br>
+          <div class="contact-details">
+            <i class="fa-solid fa-truck-fast"></i>
+            <p>nandakishorejana780@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

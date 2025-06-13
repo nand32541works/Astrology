@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Astrology Career Application</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="style8.css">
+</head>
+<body>
+
+<header class="header">
+    <nav class="navbar nav-1">
+      <section class="flex">
+        <a href="home.html" class="logo"><img src="logo.png" alt="AstroSphere"></a>
+        <ul>
+          <li><a href="daily.html">Daily Horoscope <i class="fas fa-star"></i></a></li>
+        </ul>
+      </section>
+    </nav>
+    <nav class="navbar nav-2">
+      <section class="flex">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Horoscopes <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="love.html">Love</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="health.html">Health</a></li>
+              </ul>
+            </li>
+            <li><a href="zodiac.html">Zodiac Signs</a></li>
+            <li><a href="#">Help <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <ul>
+          <li><a href="#">account <i class="fas fa-angle-down"></i></a>
+            <ul>
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="login.html" onclick="signOut()">Sign Out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </nav>
+</header>
+<section class="apply-container">
+  <h1>Apply for Astrology Job</h1>
+  <form action="#" method="post" enctype="multipart/form-data">
+    <label for="jobTitle" style="font-size: 15px;">Select Job Role:</label>
+    <select id="jobTitle" name="jobTitle" required>
+      <option value="">-- Select a Position --</option>
+      <option value="Astrologer Consultant">Astrologer Consultant</option>
+      <option value="Numerology Expert">Numerology Expert</option>
+      <option value="Tarot Card Reader">Tarot Card Reader</option>
+      <option value="Content Writer (Astrology)">Content Writer (Astrology)</option>
+      <option value="Matchmaking Analyst">Matchmaking Analyst</option>
+      <option value="Spiritual Healer">Spiritual Healer</option>
+    </select>
+    <input type="text" name="fullName" placeholder="Your Full Name" required>
+    <input type="email" name="email" placeholder="Your Email Address" required>
+    <input type="tel" name="phone" placeholder="Your Phone Number" required>
+    <label for="resume" style="font-size: 15px;">Upload Your Resume (PDF or DOC):</label>
+    <input type="file" name="resume" id="resume" accept=".pdf, .doc, .docx" required>
+    <textarea name="coverLetter" rows="5" placeholder="Write your cover letter here..." required></textarea>
+    <button type="submit">Submit Application</button>
+  </form>
+</section>
+<footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col" id="company">
+          <a href="home.html" class="logo"><img src="logo.png" alt=""></a>
+          <p>We specialize in designs and creative services to help your birth status stand out.</p>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col" id="services">
+          <h3><b>Services</b></h3>
+          <div class="links">
+            <a href="#">Illustration</a>
+            <a href="#">Creatives</a>
+            <a href="#">Poster Design</a>
+            <a href="#">House Design</a>
+          </div>
+        </div>
+        <div class="col" id="useful-links">
+          <h3>Links</h3>
+          <div class="links">
+            <a href="about2.html">About</a>
+            <a href="service2.html">Services</a>
+            <a href="#">Our Policy</a>
+            <a href="#">Help</a>
+          </div>
+        </div>
+        <div class="col" id="contact">
+          <h3>Contact</h3>
+          <div class="contact-details">
+            <i class="fa fa-location-dot"></i>
+            <p>Falguni Appartment, Barrackpore,<br>Barasat Road, Kolkata, India</p>
+          </div>
+          <br>
+          <br>
+          <div class="contact-details">
+            <i class="fa fa-phone"></i>
+            <p>+91-8100402401</p>
+          </div>
+          <br>
+          <br>
+          <div class="contact-details">
+            <i class="fa-solid fa-truck-fast"></i>
+            <p>nandakishorejana780@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</footer>
+
+</body>
+</html>

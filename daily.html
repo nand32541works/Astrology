@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Astrology Website | Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="style7.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar nav-1">
+      <section class="flex">
+        <a href="home.html" class="logo"><img src="logo.png" alt="AstroSphere"></a>
+        <ul>
+          <li><a href="daily.html">Daily Horoscope <i class="fas fa-star"></i></a></li>
+        </ul>
+      </section>
+    </nav>
+    <nav class="navbar nav-2">
+      <section class="flex">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Horoscopes <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="love.html">Love</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="health.html">Health</a></li>
+              </ul>
+            </li>
+            <li><a href="zodiac.html">Zodiac Signs</a></li>
+            <li><a href="#">Help <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <ul>
+          <li><a href="#">account <i class="fas fa-angle-down"></i></a>
+            <ul>
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="login.html" onclick="signOut()">Sign Out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </nav>
+  </header>
+  <section class="personal-horoscope">
+    <div class="container">
+        <h1>Daily Horoscope</h1>
+        <p>Enter your details to discover your personalized daily horoscope</p>
+        <form class="personal-form">
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required>
+        </div>
+        <div class="form-group">
+            <label for="zodiac">Zodiac Sign:</label>
+            <select id="zodiac" required>
+            <option value="">--Select Zodiac Sign--</option>
+            <option value="Aries">Aries</option>
+            <option value="Taurus">Taurus</option>
+            <option value="Gemini">Gemini</option>
+            <option value="Cancer">Cancer</option>
+            <option value="Leo">Leo</option>
+            <option value="Virgo">Virgo</option>
+            <option value="Libra">Libra</option>
+            <option value="Scorpio">Scorpio</option>
+            <option value="Sagittarius">Sagittarius</option>
+            <option value="Capricorn">Capricorn</option>
+            <option value="Aquarius">Aquarius</option>
+            <option value="Pisces">Pisces</option>
+            </select>
+        </div>
+        <br>
+        <center>
+            <button type="button" onclick="showPersonalHoroscope()">Check Horoscope</button>
+        </center>
+        </form>
+    </div>
+    <div class="container1">
+        <div id="personalResult" class="personal-result">
+        <p>Your personalized horoscope will appear here.</p>
+        </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col" id="company">
+          <a href="home.html" class="logo"><img src="logo.png" alt=""></a>
+          <p>We specialize in designs and creative services to help your birth status stand out.</p>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col" id="services">
+          <h3><b>Services</b></h3>
+          <div class="links">
+            <a href="#">Illustration</a>
+            <a href="#">Creatives</a>
+            <a href="#">Poster Design</a>
+            <a href="#">House Design</a>
+          </div>
+        </div>
+        <div class="col" id="useful-links">
+          <h3>Links</h3>
+          <div class="links">
+            <a href="about2.html">About</a>
+            <a href="service2.html">Services</a>
+            <a href="#">Our Policy</a>
+            <a href="#">Help</a>
+          </div>
+        </div>
+        <div class="col" id="contact">
+          <h3>Contact</h3>
+          <div class="contact-details">
+            <i class="fa fa-location-dot"></i>
+            <p>Falguni Appartment, Barrackpore,<br>Barasat Road, Kolkata, India</p>
+          </div>
+          <br>
+          <br>
+          <div class="contact-details">
+            <i class="fa fa-phone"></i>
+            <p>+91-8100402401</p>
+          </div>
+          <br>
+          <br>
+          <div class="contact-details">
+            <i class="fa-solid fa-truck-fast"></i>
+            <p>nandakishorejana780@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script2.js"></script>
+</body>
+</html>
