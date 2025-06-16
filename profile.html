@@ -51,24 +51,82 @@
   </nav>
 </header>
 
-<section class="profile-section">
-  <div class="container">
-    <h1>Your Profile</h1>
-    <div class="profile-card">
-      <div class="profile-picture">
-        <img src="person.png" alt="Profile Picture" id="profileImage">
-      </div>
-      <div class="profile-details">
-        <p><strong>Name:</strong> Nanda Kishore Jana</p>
-        <p><strong>Email:</strong> nandakishorejana780@gmail.com</p>
-        <p><strong>Phone:</strong> +91-8100402401</p>
-        <p><strong>D.O.B.:</strong> 06/11/2003</p>
-        <p><strong>Zodiac Sign:</strong> Libra</p>
-        <a href="login.html" class="inline-btn" style="border-radius: 5px;">Log Out</a>
+<div class="profile-analysis-wrapper">
+  <section class="profile-section">
+    <div class="profile-container">
+      <div class="profile-card">
+        <div class="profile-image">
+          <img src="person.png" alt="User Photo">
+        </div>
+        <h2>Nanda Kishore Jana</h2>
+        <p>Astrology Enthusiast | Zodiac Lover | Horoscope Seeker</p>
+        <div class="profile-experience">
+          <p style="text-align: justify; font-style: italic; color: blue;">
+            "With a deep fascination for astrology and celestial patterns, Nanda Kishore Jana has been actively exploring 
+            the world of zodiac signs, horoscope predictions, and birth chart analysis for over 3 years. Passionate about 
+            uncovering the mysteries of the stars and their influence on daily life, Nanda regularly engages in reading 
+            horoscopes, studying astrological texts, and sharing insightful predictions with a growing community of 
+            like-minded seekers. His journey is marked by a commitment to helping others understand themselves better 
+            through the cosmic lens."
+          </p>
+        </div>
+        <div class="profile-details">
+            <p><i class="fas fa-envelope"></i> nandakishorejana780@gmail.com</p>
+            <p><i class="fas fa-phone"></i> +91 81004 02401</p>
+            <p><i class="fas fa-birthday-cake"></i> 06/11/2003</p>
+            <p><i class="fas fa-star"></i> Libra</p>
+        </div>
+        <div class="profile-buttons">
+            <a href="#" class="btn">Edit Profile</a>
+            <a href="login.html" class="btn logout-btn">Logout</a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+  <section class="data-analysis">
+    <div class="analysis-container">
+      <h2>Your Astrology Data</h2>
+      <div class="analysis-summary">
+          <div class="summary-card">
+              <h3>5</h3>
+              <p>Total Horoscopes Checked</p>
+          </div>
+          <div class="summary-card">
+              <h3>2</h3>
+              <p>Love Predictions</p>
+          </div>
+          <div class="summary-card">
+              <h3>3</h3>
+              <p>Career Insights</p>
+          </div>
+          <div class="summary-card">
+              <h3>4</h3>
+              <p>Health Readings</p>
+          </div>
+          <div class="summary-card">
+            <h3>7</h3>
+            <p>Matchmaking Results</p>
+          </div>
+          <div class="summary-card">
+            <h3>6</h3>
+            <p>Numerology Reports</p>
+          </div>
+          <div class="summary-card">
+            <h3>3</h3>
+            <p>Tarot Card Readings</p>
+          </div>
+          <div class="summary-card">
+            <h3>8</h3>
+            <p>Daily Horoscope Checks</p>
+          </div>
+      </div>
+      <div class="analysis-chart">
+          <h3>Horoscope Insights Overview</h3>
+          <canvas id="astrologyChart"></canvas>
+      </div>
+    </div>
+  </section>
+</div>
 
 <footer class="footer">
   <div class="container">
@@ -122,16 +180,49 @@
     </div>
   </div>
 </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
-  document.getElementById('uploadProfilePic').addEventListener('change', function(e) {
-    const reader = new FileReader();
-    reader.onload = function() {
-      document.getElementById('profileImage').src = reader.result;
-    }
-    reader.readAsDataURL(e.target.files[0]);
-  });
+    const ctx = document.getElementById('astrologyChart').getContext('2d');
+    const astrologyChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: [
+                'Total Horoscopes',
+                'Love Predictions',
+                'Career Insights',
+                'Health Readings',
+                'Matchmaking Results',
+                'Numerology Reports',
+                'Tarot Readings',
+                'Daily Checks'
+            ],
+            datasets: [{
+                label: 'Insights',
+                data: [5, 2, 3, 4, 7, 6, 3, 8],
+                backgroundColor: [
+                    '#ffa500', 
+                    '#f54291', 
+                    '#007bff', 
+                    '#28a745', 
+                    '#0f3460', 
+                    '#06d6f1', 
+                    '#dc3545', 
+                    '#ffc107'  
+                ],
+                borderRadius: 6
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        stepSize: 1
+                    }
+                }
+            }
+        }
+    });
 </script>
-
 </body>
 </html>
